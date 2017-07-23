@@ -1,0 +1,26 @@
+{
+  "buId":11,
+  "role":"admin",
+  "language":"en_US",
+  "timeZone":"PST",
+  "menuList":[
+    {
+      "menu":"Master Data Lookup",
+      "value":"masterLookUp"
+      
+    },
+    {
+      "menu":"Master Data Maintanance",
+      "value":"masterDataMaintanance"
+      
+    },
+    {
+      "menu":"Search",
+      "value":"search"
+    },
+    {
+      "menu":"Authentication and Authorization",
+      "value":"authenticationAuthorization"
+    }
+  ]
+}

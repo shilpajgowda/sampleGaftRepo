@@ -1,0 +1,46 @@
+[
+    {
+        "ID": 1,
+        "FROMBUID": 2,
+        "TOBUID": 3,
+        "FROMLOCALCHANNEL": 22,
+        "TOLOCALCHANNEL": 23,
+        "TRENDVARIABLE": 1000,
+        "TRENDVALUE": 100,
+        "STARTDATE": "0",
+        "ENABLE": "true"
+    },
+    {
+        "ID": 2,
+        "FROMBUID": 2,
+        "TOBUID": 3,
+        "FROMLOCALCHANNEL": 22,
+        "TOLOCALCHANNEL": 23,
+        "TRENDVARIABLE": 1000,
+        "TRENDVALUE": 100,
+        "STARTDATE": "0",
+        "ENABLE": "true"
+    },
+    {
+        "ID": 3,
+        "FROMBUID": 2,
+        "TOBUID": 3,
+        "FROMLOCALCHANNEL": 22,
+        "TOLOCALCHANNEL": 23,
+        "TRENDVARIABLE": 1000,
+        "TRENDVALUE": 100,
+        "STARTDATE": "0",
+        "ENABLE": "true"
+    },
+    {
+        "ID": 4,
+        "FROMBUID": 2,
+        "TOBUID": 3,
+        "FROMLOCALCHANNEL": 22,
+        "TOLOCALCHANNEL": 23,
+        "TRENDVARIABLE": 1000,
+        "TRENDVALUE": 100,
+        "STARTDATE": "0",
+        "ENABLE": "true"
+    }
+]

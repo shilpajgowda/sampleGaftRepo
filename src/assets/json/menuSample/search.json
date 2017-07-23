@@ -1,0 +1,44 @@
+{
+  "buId":11,
+  "role":"admin",
+  "language":"en_US",
+  "timeZone":"PST",
+  "title":"Search",
+  "menuList":[
+    {
+      "name":"Internal Search",
+      "value":"internalSearch",
+      "secondSubMenu":[
+        {
+          "name":"Advanced Search",
+          "value":"advancedSearch"
+        },
+        {
+          "name":"Search Cases By Names",
+          "value":"searchCasesByNames"
+        },
+        {
+          "name":"Basic Search",
+          "value":"basicSearch"
+        },
+        {
+          "name":"Bank Information Search",
+          "value":"bankInfoSearch"
+        },
+        {
+          "name":"Fraud Search",
+          "value":"fraudSearch"
+        },
+        {
+          "name":"Currently Logged On Users",
+          "value":"loggedOnUsers"
+        }
+      ]
+    },
+    {
+      "name":"Positive Database Search",
+      "value":"positiveDBSearch",
+      "secondSubMenu":[]
+    }
+  ]
+}

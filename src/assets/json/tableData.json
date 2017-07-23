@@ -1,0 +1,28 @@
+{
+    "data":[
+        {
+            "name":"Debjeet Das",
+            "email":"Debjeet_Das@DellTeam.com",
+            "username":"Debjeet_Das",
+            "age":28
+        },
+        {
+            "name":"Das",
+            "email":"Debjeet_Das@hashworks.co",
+            "username":"Debjeet_Das",
+            "age":27
+        },
+        {
+            "name":"Debjeet",
+            "email":"Debjeet_Das@gmail.com",
+            "username":"Debjeet_Das",
+            "age":26
+        },
+        {
+            "name":"Debo Das",
+            "email":"Debjeet_Das@hotmail.com",
+            "username":"Debjeet_Das",
+            "age":29
+        }
+    ]
+}

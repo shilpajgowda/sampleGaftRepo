@@ -1,0 +1,23 @@
+{
+  "buId":11,
+  "role":"admin",
+  "language":"en_US",
+  "timeZone":"PST",
+  "title":"Authentication and Authorization",
+  "menuList":[
+    {
+      "name":"Maintain Users",
+      "value":"maintainUsers",
+      "secondSubMenu":[
+        {
+          "name":"View Existing Users",
+          "value":"viewExistingUsers"
+        },
+        {
+          "name":"Assign Roles",
+          "value":"assignRoles"
+        }
+      ]
+    }
+  ]
+}

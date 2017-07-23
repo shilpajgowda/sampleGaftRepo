@@ -1,0 +1,33 @@
+<accordion-group #group [isOpen]=true>
+    <div accordion-heading>
+      {{urlParam | titleCase}}
+      <i class="pull-right float-xs-right glyphicon"
+         [ngClass]="{'glyphicon-chevron-up': group?.isOpen, 'glyphicon-chevron-down': !group?.isOpen}"></i>
+    </div>
+    <!--<div class="table">
+        <div class="table-row" *ngFor="let actData of actualData">
+            <div class="width-20 table-cell"  *ngFor="let item of headerData">
+                {{actData.item}}
+            </div>
+        </div>
+    </div>-->
+    <div class="table-responsive">
+        <!--<table class="table">
+            <thead>
+                <tr>
+                    <th *ngFor="let column of headerData">
+                        {{column | titleCase}}
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let data of actualData">
+                    <td *ngFor="let column of headerData">
+                        {{data[column]}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>-->
+        <ng2-smart-table  [settings]="settings"  [source]="actualData" (deleteConfirm)="onDeleteConfirm($event)" (editConfirm)="onSaveConfirm($event)" (createConfirm)="onCreateConfirm($event)"></ng2-smart-table>
+    </div>
+  </accordion-group>

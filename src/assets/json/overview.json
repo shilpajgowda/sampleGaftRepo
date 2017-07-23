@@ -1,0 +1,12 @@
+{
+    "scheduleID": 7,
+    "total": 8,
+    "open": 2,
+    "inProgress": 1,
+    "completed": 0,
+    "failed": 5,
+    "scheduledOn": "2017-01-31T18:19:50.793Z",
+    "scheduleStatus": "InProgress",
+    "modifiedOn": "2017-04-12T02:45:19.6162528Z",
+    "jobId": 893
+}

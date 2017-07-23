@@ -1,0 +1,39 @@
+[{
+        "ApplicationName": "DSA",
+        "Status": "Failed",
+        "Category": "NA"
+    },
+    {
+        "ApplicationName": "GCM",
+        "Status": null,
+        "Category": "NA"
+
+    },
+    {
+        "ApplicationName": "GCMUI",
+        "Status": null,
+        "Category": "NA"
+    },
+    {
+        "ApplicationName": "OCI",
+        "Status": null,
+        "Category": "NA"
+    },
+    {
+        "ApplicationName": "OM",
+        "Status": null,
+        "Category": "NA"
+
+    },
+    {
+        "ApplicationName": "CFO",
+        "Status": null,
+        "Category": "NA"
+
+    },
+    {
+        "ApplicationName": "BRM",
+        "Status": null,
+        "Category": "NA"
+    }
+]

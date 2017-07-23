@@ -1,0 +1,232 @@
+{
+  "buId":11,
+  "role":"admin",
+  "language":"en_US",
+  "timeZone":"PST",
+  "menuList":[
+    {
+      "headMenu":"Master Data Lookup",
+      "subMenu":[
+        {
+          "name":"View Config Params",
+          "value":"viewConfigParams",
+          "secondSubMenu":[]
+        },
+        {
+          "name":"View Decision Variable",
+          "value":"viewDecisionVariable",
+          "secondSubMenu":[]
+        }
+      ]
+    },
+    {
+      "headMenu":"Master Data Maintanance",
+      "subMenu":[
+        {
+          "name":"Maintain Alias Scoring",
+          "value":"aliasScoring",
+          "secondSubMenu":[]
+        },
+        {
+          "name":"Maintain Auth Codes",
+          "value":"authCodes",
+          "secondSubMenu":[]
+        },
+        {
+          "name":"Maintain AVS Groups",
+          "value":"avsGroups",
+          "secondSubMenu":[]
+        },
+        {
+          "name":"Maintain AVS Codes",
+          "value":"avsCodes",
+          "secondSubMenu":[]
+        },
+        {
+          "name":"Maintain AVS Code Mapping",
+          "value":"avsCodeMapping",
+          "secondSubMenu":[]
+        },
+        {
+          "name":"Maintain Bin Data",
+          "value":"binData",
+          "secondSubMenu":[]
+        },
+        {
+          "name":"Maintain Bin Groups",
+          "value":"binGroups",
+          "secondSubMenu":[]
+        },
+        {
+          "name":"Maintain BUID",
+          "value":"maintainBUID",
+          "secondSubMenu":[]
+        },
+        {
+          "name":"Maintain Auth Codes",
+          "value":"authCodes",
+          "secondSubMenu":[]
+        },
+        {
+          "name":"Maintain AVS Groups",
+          "value":"avsGroups",
+          "secondSubMenu":[]
+        },
+        {
+          "name":"Maintain AVS Codes",
+          "value":"avsCodes",
+          "secondSubMenu":[]
+        },
+        {
+          "name":"Maintain AVS Code Mapping",
+          "value":"avsCodeMapping",
+          "secondSubMenu":[]
+        },
+        {
+          "name":"Maintain Bin Data",
+          "value":"binData",
+          "secondSubMenu":[]
+        },
+        {
+          "name":"Maintain Bin Groups",
+          "value":"binGroups",
+          "secondSubMenu":[]
+        },
+        {
+          "name":"Maintain BUID",
+          "value":"maintainBUID",
+          "secondSubMenu":[]
+        },
+        {
+          "name":"Maintain Auth Codes",
+          "value":"authCodes",
+          "secondSubMenu":[]
+        },
+        {
+          "name":"Maintain AVS Groups",
+          "value":"avsGroups",
+          "secondSubMenu":[]
+        },
+        {
+          "name":"Maintain AVS Codes",
+          "value":"avsCodes",
+          "secondSubMenu":[]
+        },
+        {
+          "name":"Maintain AVS Code Mapping",
+          "value":"avsCodeMapping",
+          "secondSubMenu":[]
+        },
+        {
+          "name":"Maintain Bin Data",
+          "value":"binData",
+          "secondSubMenu":[]
+        },
+        {
+          "name":"Maintain Bin Groups",
+          "value":"binGroups",
+          "secondSubMenu":[]
+        },
+        {
+          "name":"Maintain BUID",
+          "value":"maintainBUID",
+          "secondSubMenu":[]
+        },
+        {
+          "name":"Maintain Auth Codes",
+          "value":"authCodes",
+          "secondSubMenu":[]
+        },
+        {
+          "name":"Maintain AVS Groups",
+          "value":"avsGroups",
+          "secondSubMenu":[]
+        },
+        {
+          "name":"Maintain AVS Codes",
+          "value":"avsCodes",
+          "secondSubMenu":[]
+        },
+        {
+          "name":"Maintain AVS Code Mapping",
+          "value":"avsCodeMapping",
+          "secondSubMenu":[]
+        },
+        {
+          "name":"Maintain Bin Data",
+          "value":"binData",
+          "secondSubMenu":[]
+        },
+        {
+          "name":"Maintain Bin Groups",
+          "value":"binGroups",
+          "secondSubMenu":[]
+        },
+        {
+          "name":"Maintain BUID",
+          "value":"maintainBUID",
+          "secondSubMenu":[]
+        }
+      ]
+    },
+    {
+      "headMenu":"Search",
+      "subMenu":[
+        {
+          "name":"Internal Search",
+          "value":"internalSearch",
+          "secondSubMenu":[
+            {
+              "name":"Advanced Search",
+              "value":"advancedSearch"
+            },
+            {
+              "name":"Search Cases By Names",
+              "value":"searchCasesByNames"
+            },
+            {
+              "name":"Basic Search",
+              "value":"basicSearch"
+            },
+            {
+              "name":"Bank Information Search",
+              "value":"bankInfoSearch"
+            },
+            {
+              "name":"Fraud Search",
+              "value":"fraudSearch"
+            },
+            {
+              "name":"Currently Logged On Users",
+              "value":"loggedOnUsers"
+            }
+          ]
+        },
+        {
+          "name":"Positive Database Search",
+          "value":"positiveDBSearch",
+          "secondSubMenu":[]
+        }
+      ]
+    },
+    {
+      "headMenu":"Authentication and Authorization",
+      "subMenu":[
+        {
+          "name":"Maintain Users",
+          "value":"maintainUsers",
+          "secondSubMenu":[
+            {
+              "name":"View Existing Users",
+              "value":"viewExistingUsers"
+            },
+            {
+              "name":"Assign Roles",
+              "value":"assignRoles"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

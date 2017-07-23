@@ -1,0 +1,154 @@
+<section *ngIf="isLoading && !errorMessage">
+    Loading our hyperdrives!!! Retrieving data...
+    <img src="../../assets/img/Loading_icon.gif"/>
+</section>
+<!-- this is the new syntax for ng-repeat -->
+<!--<ul>
+    <li *ngFor="let person of people">
+        <a [routerLink]="['/users', person.id]">
+        {{person.first_name}} 
+        </a>
+    </li>
+</ul>-->
+<!-- HERE: added this error message -->
+<section *ngIf="errorMessage">
+    {{errorMessage}}
+</section>
+
+<accordion>
+  <accordion-group #group [isOpen]=true>
+    <div accordion-heading>
+      Alias Scoring Rules
+      <i class="pull-right float-xs-right glyphicon" [ngClass]="{'glyphicon-chevron-up': group?.isOpen, 'glyphicon-chevron-down': !group?.isOpen}"></i>
+    </div>
+    <form [formGroup]="complexForm" (ngSubmit)="submitForm(complexForm.value)">
+        <div class="table">
+            <div class="table-row">
+                <div class="width-20 float-left table-cell">&nbsp;</div>
+                <div class="width-20 float-left table-cell">BUID</div>
+                <div class="width-20 float-left table-cell">Local Channel</div>
+                <div class="width-20 float-left table-cell">Trend Variable</div>
+                <div class="width-20 float-left table-cell">Trend Value</div>
+            </div>
+            
+            <div class="table-row bgLgray">
+                <div class="width-20 float-left table-cell">From : </div>
+                <div class="width-20 float-left table-cell"  [ngClass]="{'has-error':!complexForm.controls['fromBUID'].valid}">
+                    <select name="fromBUID" id="fromBUID" [formControl]="complexForm.controls['fromBUID']" [(ngModel)]="dataToSend.FROMBUID" (ngModelChange)="rootSelectedAlias(dataToSend.FROMBUID)">
+                        <option [attr.value]="" [attr.selected]="true" disabled>--Select--</option>
+                        <!--<option *ngFor="let item of appData;let i = index" [attr.selected]="i==0? true : null" [attr.value]="item">{{item}}</option>-->
+                        <option *ngFor="let item of appData" [attr.value]="item">{{item}}</option>
+                    </select>
+                    <span class="zmdi zmdi-chevron-down"></span>
+                </div>
+                <div class="width-20 float-left table-cell"  [ngClass]="{'has-error':!complexForm.controls['fromLocal'].valid}">
+                    <select name="fromLocal" id="fromLocal" [formControl]="complexForm.controls['fromLocal']" [(ngModel)]="dataToSend.FROMLOCALCHANNEL" (ngModelChange)="rootSelectedAlias(dataToSend.FROMLOCALCHANNEL)">
+                        <!--<option *ngFor="let item of people;let i = index" [attr.selected]="i==0? true : null" [attr.value]="item.last_name">{{item.last_name}}</option>-->
+                        <option [attr.value]="" [attr.selected]="true" disabled>--Select--</option>
+                        <option [attr.value]="1">Trend Variable</option>
+                    </select>
+                    <span class="zmdi zmdi-chevron-down"></span>
+                </div>
+                <div class="width-20 float-left table-cell" [ngClass]="{'has-error':!complexForm.controls['fromTrendVariable'].valid}">
+                    <select name="fromTrendVariable" id="fromTrendVariable" [formControl]="complexForm.controls['fromTrendVariable']" [(ngModel)]="dataToSend.TRENDVARIABLE" (ngModelChange)="rootSelectedAlias(dataToSend.TRENDVARIABLE)">
+                        <!--<option *ngFor="let item of people;let i = index" [attr.selected]="i==0? true : null" [attr.value]="item.last_name">{{item.last_name}}</option>-->
+                        <option [attr.value]="" [attr.selected]="true" disabled>--Select--</option>
+                        <option [attr.value]="1">Trend Variable</option>
+                    </select>
+                    <span class="zmdi zmdi-chevron-down"></span>
+                </div>
+                <div class="width-20 float-left table-cell" [ngClass]="{'has-error':!complexForm.controls['fromTrendValue'].valid}">
+                    <select name="fromTrendValue" id="fromTrendValue" [formControl]="complexForm.controls['fromTrendValue']" [(ngModel)]="dataToSend.TRENDVALUE" (ngModelChange)="rootSelectedAlias(dataToSend.TRENDVALUE)">
+                        <!--<option *ngFor="let item of people;let i = index" [attr.selected]="i==0? true : null" [attr.value]="item.last_name">{{item.last_name}}</option>-->
+                        <option [attr.value]="" [attr.selected]="true" disabled>--Select--</option>
+                        <option [attr.value]="1">Trend Value</option>
+                    </select>
+                    <span class="zmdi zmdi-chevron-down"></span>
+                </div>
+            </div>
+            
+            <div class="table-row bgDgray">
+                <div class="width-20 float-left table-cell">To : </div>
+                <div class="width-20 float-left table-cell"  [ngClass]="{'has-error':!complexForm.controls['toBUID'].valid}">
+                    <select name="toBUID" id="toBUID" [formControl]="complexForm.controls['toBUID']" [(ngModel)]="dataToSend.TOBUID" (ngModelChange)="rootSelectedAlias(dataToSend.TOBUID)">
+                        <option [attr.value]="" [attr.selected]="true" disabled>--Select--</option>
+                        <!--<option *ngFor="let item of appData;let i = index" [attr.selected]="i==0? true : null" [attr.value]="item">{{item}}</option>-->
+                        <option *ngFor="let item of appData" [attr.value]="item">{{item}}</option>
+                    </select>
+                    <span class="zmdi zmdi-chevron-down"></span>
+                </div>
+                <div class="width-20 float-left table-cell"  [ngClass]="{'has-error':!complexForm.controls['toLocal'].valid}">
+                    <select name="toLocal" id="toLocal" [formControl]="complexForm.controls['toLocal']" [(ngModel)]="dataToSend.TOLOCALCHANNEL" (ngModelChange)="rootSelectedAlias(dataToSend.TOLOCALCHANNEL)">
+                        <!--<option *ngFor="let item of people;let i = index" [attr.selected]="i==0? true : null" [attr.value]="item.last_name">{{item.last_name}}</option>-->
+                        <option [attr.value]="" [attr.selected]="true" disabled>--Select--</option>
+                        <option [attr.value]="1">Local</option>
+                    </select>
+                    <span class="zmdi zmdi-chevron-down"></span>
+                </div>
+                <div class="width-20 float-left table-cell">&nbsp;</div>
+                <div class="width-20 float-left table-cell" [ngClass]="{'has-error':!complexForm.controls['toTrendValue'].valid}">
+                    <select name="toTrendValue" id="toTrendValue" [formControl]="complexForm.controls['toTrendValue']" [(ngModel)]="totvalddSelected" (ngModelChange)="rootSelectedAlias(totvalddSelected)">
+                        <!--<option *ngFor="let item of people;let i = index" [attr.selected]="i==0? true : null" [attr.value]="item.last_name">{{item.last_name}}</option>-->
+                        <option [attr.value]="" [attr.selected]="true" disabled>--Select--</option>
+                        <option [attr.value]="1">Local</option>
+                    </select>
+                    <span class="zmdi zmdi-chevron-down"></span>
+                </div>
+            </div>
+            
+            <div class="table-row">
+                <div class="width-20 float-left table-cell">Expiry Date : </div>
+                <div class="width-20 float-left table-cell">
+                    <div *ngIf="!(dateValidation)" class="has-error">Please select a date more than todays date</div>
+                    <ng2-datepicker [options]="options" [(ngModel)]="date" [formControl]="complexForm.controls['date']" (ngModelChange)="onDateChange($event)" (blur)="compareTwoDates()"></ng2-datepicker>
+                </div>
+                <div class="width-20 float-left table-cell">
+                     <input type="checkbox" [(ngModel)]="version2" [formControl]="complexForm.controls['versionControl']" name="versionControl" (change)="enableCheck(version2)">
+                    <label (click)="checkVersion()">{{versionText}}</label> 
+                </div>
+                <div class="width-20 float-left table-cell">&nbsp;</div>
+                <div class="width-20 float-left table-cell btnClass">
+                    <button (click)="lgModal.show()" [disabled]="(!complexForm.valid) || !(dateValidation)" class="btn btn-primary" type="button">Add New</button> 
+                     <div bsModal #lgModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" [config]="{ keyboard: true, backdrop: true }" >
+                        <div class="modal-dialog modal-md">
+                            <div class="cssHack">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title pull-left">Confirm Alias scoring rules</h4>
+                                        <button type="button" class="close pull-right" aria-label="Close" (click)="lgModal.hide()">
+                                        <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-xs-2 col-md-2 col-sm-2 col-lg-2">
+                                                <span class="questionImg"></span>
+                                            </div>
+                                            <div class="col-xs-10 col-md-10 col-sm-10 col-lg-10 detailedInfo">
+                                                <h4>You've selected the following combinations</h4>
+                                                <div class="data-center">
+                                                    From BUID = {{dataToSend.FROMBUID}}<br/>
+                                                    To BUID = {{dataToSend.TOBUID}}<br/>
+                                                    Selected Date = {{originalDate}}<br/>
+                                                </div>
+                                                <h4>Click Yes to Continue</h4>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <button type="submit" class="btn btn-primary" (click)="lgModal.hide()">Yes</button>
+                                            <button (click)="lgModal.hide()" type="button" class="btn btn-default">No</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </form>
+  </accordion-group>
+  <task-pane></task-pane>
+  
+    <gaft-form></gaft-form>
+</accordion>

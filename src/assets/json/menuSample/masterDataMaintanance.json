@@ -1,0 +1,154 @@
+{
+  "buId":11,
+  "role":"admin",
+  "language":"en_US",
+  "timeZone":"PST",
+  "title":"Master Data Maintanance",
+  "menuList":[
+    {
+      "name":"Maintain Alias Scoring",
+      "value":"ALIAS_SCORING",
+      "secondSubMenu":[]
+    },
+    {
+      "name":"Maintain Auth Codes",
+      "value":"auth_codes",
+      "secondSubMenu":[]
+    },
+    {
+      "name":"Maintain AVS Groups",
+      "value":"avsGroups",
+      "secondSubMenu":[]
+    },
+    {
+      "name":"Maintain AVS Codes",
+      "value":"avsCodes",
+      "secondSubMenu":[]
+    },
+    {
+      "name":"Maintain AVS Code Mapping",
+      "value":"avsCodeMapping",
+      "secondSubMenu":[]
+    },
+    {
+      "name":"Maintain Bin Data",
+      "value":"binData",
+      "secondSubMenu":[]
+    },
+    {
+      "name":"Maintain Bin Groups",
+      "value":"binGroups",
+      "secondSubMenu":[]
+    },
+    {
+      "name":"Maintain BUID",
+      "value":"maintainBUID",
+      "secondSubMenu":[]
+    },
+    {
+      "name":"Maintain Auth Codes",
+      "value":"authCodes",
+      "secondSubMenu":[]
+    },
+    {
+      "name":"Maintain AVS Groups",
+      "value":"avsGroups",
+      "secondSubMenu":[]
+    },
+    {
+      "name":"Maintain AVS Codes",
+      "value":"avsCodes",
+      "secondSubMenu":[]
+    },
+    {
+      "name":"Maintain AVS Code Mapping",
+      "value":"avsCodeMapping",
+      "secondSubMenu":[]
+    },
+    {
+      "name":"Maintain Bin Data",
+      "value":"binData",
+      "secondSubMenu":[]
+    },
+    {
+      "name":"Maintain Bin Groups",
+      "value":"binGroups",
+      "secondSubMenu":[]
+    },
+    {
+      "name":"Maintain BUID",
+      "value":"maintainBUID",
+      "secondSubMenu":[]
+    },
+    {
+      "name":"Maintain Auth Codes",
+      "value":"authCodes",
+      "secondSubMenu":[]
+    },
+    {
+      "name":"Maintain AVS Groups",
+      "value":"avsGroups",
+      "secondSubMenu":[]
+    },
+    {
+      "name":"Maintain AVS Codes",
+      "value":"avsCodes",
+      "secondSubMenu":[]
+    },
+    {
+      "name":"Maintain AVS Code Mapping",
+      "value":"avsCodeMapping",
+      "secondSubMenu":[]
+    },
+    {
+      "name":"Maintain Bin Data",
+      "value":"binData",
+      "secondSubMenu":[]
+    },
+    {
+      "name":"Maintain Bin Groups",
+      "value":"binGroups",
+      "secondSubMenu":[]
+    },
+    {
+      "name":"Maintain BUID",
+      "value":"maintainBUID",
+      "secondSubMenu":[]
+    },
+    {
+      "name":"Maintain Auth Codes",
+      "value":"authCodes",
+      "secondSubMenu":[]
+    },
+    {
+      "name":"Maintain AVS Groups",
+      "value":"avsGroups",
+      "secondSubMenu":[]
+    },
+    {
+      "name":"Maintain AVS Codes",
+      "value":"avsCodes",
+      "secondSubMenu":[]
+    },
+    {
+      "name":"Maintain AVS Code Mapping",
+      "value":"avsCodeMapping",
+      "secondSubMenu":[]
+    },
+    {
+      "name":"Maintain Bin Data",
+      "value":"binData",
+      "secondSubMenu":[]
+    },
+    {
+      "name":"Maintain Bin Groups",
+      "value":"binGroups",
+      "secondSubMenu":[]
+    },
+    {
+      "name":"Maintain BUID",
+      "value":"maintainBUID",
+      "secondSubMenu":[]
+    }
+  ]
+}

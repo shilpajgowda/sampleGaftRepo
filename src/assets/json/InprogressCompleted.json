@@ -1,0 +1,33 @@
+[{
+    "ScheduleId": 6,
+    "BatchID": 0,
+    "BatchName": "DFS Batch",
+    "ScheduledStatus": "InProgress",
+    "ScheduledBy": null,
+    "ScheduledEnvName": null,
+    "ScheduledOn": "2017-01-09T06:55:00.963Z"
+}, {
+    "ScheduleId": 7,
+    "BatchID": 0,
+    "BatchName": "DFS Batch -1 ",
+    "ScheduledStatus": "InProgress",
+    "ScheduledBy": null,
+    "ScheduledEnvName": null,
+    "ScheduledOn": "2017-01-31T18:19:50.793Z"
+}, {
+    "ScheduleId": 8,
+    "BatchID": 0,
+    "BatchName": "1st_Feb_2017",
+    "ScheduledStatus": "InProgress",
+    "ScheduledBy": null,
+    "ScheduledEnvName": null,
+    "ScheduledOn": "2017-02-01T17:30:00Z"
+}, {
+    "ScheduleId": 14,
+    "BatchID": 0,
+    "BatchName": "1st Batch 06 Apr",
+    "ScheduledStatus": "InProgress",
+    "ScheduledBy": null,
+    "ScheduledEnvName": null,
+    "ScheduledOn": "2017-04-06T08:12:08Z"
+}]

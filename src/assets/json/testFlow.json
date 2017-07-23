@@ -1,0 +1,78 @@
+[
+  {
+    "ProfileId": "009CONUS",
+    "profileName": "E2E - 009-Consumer-Spares Order-Credit Card-Existing Customer",
+    "ProfileDetail":
+      [
+        {
+          "ApplicationName": "DSA",
+          "ApplicationStatus": "Completed",
+          "ApplicationData": "DPID : 2005395054001 - PaymentMethod : CreditCard - RunID : 122074 - ShippingMethod : Dell Standard Delivery"
+        },
+        {
+          "ApplicationName": "CCS",
+          "ApplicationStatus": "Completed",
+          "ApplicationData": "DPID : 2005395054001 - PaymentMethod : CreditCard - RunID : 122074 - ShippingMethod : Dell Standard Delivery"
+        },
+        {
+          "ApplicationName": "DAS",
+          "ApplicationStatus": "Completed",
+          "ApplicationData": "RunID : 1220832"
+        },
+        {
+          "ApplicationName": "DES",
+          "ApplicationStatus": "Completed",
+          "ApplicationData": "RunID : 1220832"
+        },
+        {
+          "ApplicationName": "ADF",
+          "ApplicationStatus": "Completed",
+          "ApplicationData": "RunID : 1220832"
+        }
+      ]
+  },
+  {
+    "ProfileId": "001BRM",
+    "profileName": "E2E - 009-Consumer-Spares Order-Credit Card-Existing Customer",
+    "ProfileDetail":
+      [
+        {
+          "ApplicationName": "EWR",
+          "ApplicationStatus": "Completed",
+          "ApplicationData": "DPID : 2005395054001 - PaymentMethod : CreditCard - RunID : 122074 - ShippingMethod : Dell Standard Delivery"
+        },
+        {
+          "ApplicationName": "DGHF",
+          "ApplicationStatus": "Completed",
+          "ApplicationData": "DPID : 2005395054001 - PaymentMethod : CreditCard - RunID : 122074 - ShippingMethod : Dell Standard Delivery"
+        },
+        {
+          "ApplicationName": "NDS",
+          "ApplicationStatus": "Completed",
+          "ApplicationData": "RunID : 1220832"
+        }
+      ]
+  },
+  {
+    "ProfileId": "002BRM",
+    "profileName": "E2E - 009-Consumer-Spares Order-Credit Card-Existing Customer",
+    "ProfileDetail":
+      [
+        {
+          "ApplicationName": "DSA",
+          "ApplicationStatus": "open",
+          "ApplicationData": ""
+        },
+        {
+          "ApplicationName": "GCM",
+          "ApplicationStatus": "inprogress",
+          "ApplicationData": null
+        },
+        {
+          "ApplicationName": "BRM",
+          "ApplicationStatus": "Completed",
+          "ApplicationData": "RunID : 1220832"
+        }
+      ]
+  }
+]

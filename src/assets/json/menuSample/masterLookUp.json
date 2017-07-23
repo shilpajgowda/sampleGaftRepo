@@ -1,0 +1,19 @@
+{
+  "buId":11,
+  "role":"admin",
+  "language":"en_US",
+  "timeZone":"PST",
+  "title":"Master Data Lookup",
+  "menuList":[
+    {
+      "name":"View Config Params",
+      "value":"viewConfigParams",
+      "secondSubMenu":[]
+    },
+    {
+      "name":"View Decision Variable",
+      "value":"viewDecisionVariable",
+      "secondSubMenu":[]
+    }
+  ]
+}

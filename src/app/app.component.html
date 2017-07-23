@@ -1,0 +1,107 @@
+<nav class="navbar navbar-default" role="navigation">
+  <div class="navbar-header">
+    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 headMenu">
+      <a href="javascript:void(0);" id="menu-toggle" menuToggle><i class="fa fa-bars" aria-hidden="true"></i></a>
+      <a href="/" class="navbar-brand hvr-grow">
+        <img width="35" height="35" border="0" title="Dell" alt="Dell" src="./assets/img/logo-wt-bl.png">
+      </a>
+      <h4 class="nav navbar-nav app-nav-head">GAFT</h4>
+      <!--<select name="envListSelect" id="envList" ng-model="envSelected" ng-options="x for x in envNames" ng-change="rootSelectedEnvfn(envSelected)">
+        <option value="" disabled="" class="">-Select-</option>
+      </select>
+      <span class="zmdi zmdi-chevron-down"></span>
+      <select name="scheduleListSelect" class="scheduleListSelect" id="scheduleList" ng-model="selectedSid" ng-options="x.BatchName +' '+ (x.ScheduledOn |utcToLocal:'MMM dd, yy h:mm a') group by x.ScheduledStatus for x in scheduleInfoList"
+        options-class="{'success':(x.ScheduledStatus.toLowerCase() == 'completed'), 'info':(x.ScheduledStatus.toLowerCase() == 'inprogress')}"
+        ng-change="selectedSidfn()">
+        <option value="" disabled="" class="">-Select-</option>
+      </select>
+      <span class="zmdi zmdi-chevron-down"></span>-->
+    </div>
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 headMenuRight">
+      <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7" ng-init="appBoot=false;profileBoot=true">
+        <!--<div class="float-left positionCenter">
+          <div id="radioBtn" class="btn-group">
+            <a pa-select class="btn btn-primary btn-sm active"  data-toggle="happy" data-title="Profile View" ng-click="appBoot=false;profileBoot=true;profileServiceCall()">Profile View</a>
+            <a pa-select class="btn btn-primary btn-sm notActive" data-toggle="happy" data-title="App View"  ng-click="appBoot=true;profileBoot=false">App View</a>
+          </div>
+        </div>
+
+        <div class="float-left" ng-show="appBoot">
+          <select name="appSelection" class="appSelection" id="appSelection" ng-model="appSelection" ng-change="appServiceCall()">
+            <option ng-repeat="x in appInformation" class="">{{x}}</option>
+          </select>
+          <span class="zmdi zmdi-chevron-down"></span>
+        </div>-->
+      </div>
+      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 user-prop">
+        <!--<span class="user-img"><img src="./assets/img/logo-wt-bl.png" width="25" height="25"/></span>-->
+        <span class="user-name">
+          <span title="Username">Welcome <strong>Username</strong></span>
+          <!--<ul class="account-properties arrow_box hidden notifyDD">
+            <li class="li" class="">Sign out</li>
+          </ul>-->
+        </span>
+      </div>
+    </div>
+  </div>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dropDownTab">
+  <div class="dropdownTabContent">
+    <span class="dropDownText">BUID</span>
+    <select name="buidListSelect" id="buidList" [(ngModel)]="buidSelected" (ngModelChange)="rootSelectedEnvfn(buidSelected,null)">
+      <option *ngFor="let item of people;let i = index" [attr.selected]="i==0? true : null" [attr.value]="item.id">{{item.first_name}}</option>
+    </select>
+    <span class="zmdi zmdi-chevron-down"></span>
+  </div>
+  <div class="dropdownTabContent">
+    <span class="dropDownText">Admin</span>
+    <select name="adminListSelect" id="adminList" [(ngModel)]="adminSelected" (ngModelChange)="rootSelectedEnvfn(null,adminSelected)">
+      <option *ngFor="let item of people;let i = index" [attr.selected]="i==0? true : null" [attr.value]="item.first_name">{{item.first_name}}</option>
+    </select>
+    <span class="zmdi zmdi-chevron-down"></span>
+  </div>
+  <div class="dropdownTabContent">
+    <span class="dropDownText">Language</span>
+    <select name="langListSelect" id="langList" [(ngModel)]="languageSelected" (ngModelChange)="rootSelectedEnvfn(languageSelected)">
+      <option *ngFor="let item of people;let i = index" [attr.selected]="i==0? true : null" [attr.value]="item.last_name">{{item.last_name}}</option>
+    </select>
+    <span class="zmdi zmdi-chevron-down"></span>
+  </div>
+  <div class="dropdownTabContent">
+    <span class="dropDownText">Timezone</span>
+    <select name="tzListSelect" id="tzList" [(ngModel)]="timezoneSelected" (ngModelChange)="rootSelectedEnvfn(timezoneSelected)">
+      <option *ngFor="let item of people;let i = index" [attr.selected]="i==0? true : null" [attr.value]="item.avatar">{{item.avatar}}</option>
+    </select>
+    <span class="zmdi zmdi-chevron-down"></span>
+  </div>
+</div>
+</nav>
+<div id="wrapper">
+<div class="nav-side-menu sidebar-collapsed-back">
+    <!--<div class="brand">Brand Logo</div>-->
+    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+  
+        <div class="menu-list" id="accordion">  
+            <ul id="menu-content" class="menu-content collapse out">
+                <li *ngFor="let headMenu of menuList; let i = index" class="menuList">
+                   <ul> 
+                    <li data-toggle="collapse" data-parent="#accordion" [attr.data-target]="'#'+headMenu.value" class="collapsed" (click)="menuInfo()">
+                      <a (click)="menuSelected(headMenu.value)">{{headMenu.menu | titleCase}} <span class="arrow"></span></a>
+                    </li>
+                    <div class="sub-menu collapse" id="{{headMenu.value}}">
+                    <!-- <div class="sub-menu collapse" [ngClass]="{'in':i==0}" id="{{headMenu.value}}"> -->
+                      <ul class="inner-menu">
+                          <!-- <li *ngFor="let item of gaftData"><a [routerLink]="['/menu/'+item.value]">{{item.name | titleCase}}</a></li>   -->
+                          <li *ngFor="let item of gaftData"><a (click)="submenuSelected(item.value)">{{item.name | titleCase}}</a></li>  
+                      </ul>
+                    </div>
+                   </ul> 
+                </li>
+            </ul>
+     </div>
+</div>
+  <div id="page-content-wrapper" class="collapseData">
+    <div class="col-xs-12 col-sm-12 col-lg-12 col-md-12 bottomContent">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
